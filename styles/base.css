@@ -1,0 +1,53 @@
+@font-face{
+    src: url("../fonts/BebasNeue-Regular.ttf")
+    format("truetype");
+    font-family: BebasNeue;
+}
+
+@font-face{
+    src: url("../fonts/DMSans-Regular.ttf")
+    format("truetype");
+    font-family: DMSans;
+}
+
+:root{
+    --headings-font: BebasNeue, san-serif;
+    --base-font: DMSans, san-serif;
+    --primary: rgba(0, 51, 102, 1);      /* Deep Blue */
+    --secondary: rgba(255, 255, 255, 1); /* White */
+    --accent: rgba(135, 206, 235, 1);    /* Sky Blue */
+    --bg: #0F172A;
+    --border: #334155;
+    --border-radius: 1rem;
+    --gap: 0.95rem;
+    --transition-duration: 0.4s;
+    --line-height: 1.65rem;
+    --font-size: clamp(1.1rem, 1.5rem, 2vw);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: var(--font-size);
+}
+
+body{
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    background: black;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--headings-font);
+}
+
+
+.menu-bar{
+    border: none;
+ }
+
