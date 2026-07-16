@@ -23,8 +23,9 @@
 }
 
 .sk-item{
-    width: 5rem;
-    height: 5rem;
+    width: 3.9rem;
+    height: 3rem;
+    margin-left: 0.7rem;
 }
 
 .m-list{
@@ -70,6 +71,7 @@
 .sk-btn{
     width: 6rem;
     height: 2.5rem;
+    margin-left: 0.7rem;
 }
 
 .prt-1{
@@ -79,9 +81,6 @@
 }
 
 .cta-buttons{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
 }
 
 .sk-label{
@@ -149,4 +148,41 @@
     width: 3.6rem;
     height: 2rem;
     margin-top: 0.6rem;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+}
+
+main{
+    margin-top: 3.5rem;
+}
+
+.contact-button{
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 50%;
+    position: fixed;
+    left: 70%;
+    bottom: 15%;
+}
+
+@media screen and (min-width: 992px){
+    .menu-btn{
+        display: none;
+    }
+    .m-list{
+        display: block;
+    }
+    .cf{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0.6rem 1rem;
+    }
 }
