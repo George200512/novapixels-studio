@@ -18,7 +18,7 @@
     --accent: rgba(135, 206, 235, 1);    /* Sky Blue */
     --bg: #0F172A;
     --border: #334155;
-    --border-radius: 1rem;
+    --border-radius: 0.6rem;
     --gap: 0.95rem;
     --transition-duration: 0.4s;
     --line-height: 1.65rem;
@@ -39,6 +39,7 @@ body{
     font-size: var(--font-size);
     line-height: var(--line-height);
     background: black;
+    color: white;
 }
 
 
@@ -50,4 +51,8 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
+}
+
+.b-header{
+    background: black;
 }

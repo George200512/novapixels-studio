@@ -126,7 +126,7 @@
 .type{
     width: 7rem;
     height: 2rem;
-}
+} 
 
 .descr{
     width: 9rem;
@@ -171,6 +171,17 @@ main{
     bottom: 15%;
 }
 
+
+.sk-pbtn{
+    width: 6rem;
+    height: 3rem;
+}
+
+.logo{
+    width: 6rem;
+    height: 3rem;
+    border-radius: var(--border-radius);
+}
 @media screen and (min-width: 992px){
     .menu-btn{
         display: none;

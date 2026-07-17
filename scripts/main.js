@@ -1,9 +1,18 @@
-import {Body} from "../components/body.js";
+import {VBody} from "../components/body.js";
 const app = Vue.createApp({
-				components:{Body}
+				components:{VBody},
+				data (){
+								return {
+												loading: true
+								}
+				},
+				mounted (){
+								setTimeout(()=>{
+												this.loading = false;
+				}, 2500);
+
+				}
 });
 app.mount("#app");
 
-setTimeout(()=>{
-								document.getElementById("app").innerHTML = "<Body>"
-				}, 3000);
+

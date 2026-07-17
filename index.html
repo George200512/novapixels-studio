@@ -24,6 +24,7 @@
 </head>
 <body>
     <div id="app">
+        <div v-if="loading">
     <header>
         <nav class="menu-bar">
             <div class="container-fluid cf">
@@ -143,6 +144,8 @@
     <footer>
         <div class="skeleton contact-button"></div>
     </footer>
+        </div>
+        <v-body v-else></v-body>
     </div>
 </body>
 </html>
