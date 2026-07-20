@@ -182,6 +182,10 @@ main{
     height: 3rem;
     border-radius: var(--border-radius);
 }
+
+.menu{
+    display: none;
+}
 @media screen and (min-width: 992px){
     .menu-btn{
         display: none;
