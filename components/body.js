@@ -36,22 +36,101 @@ const VBody = {
 				<div class="bd-about row" id="about">
 				<div class="bd-abt col-xs-12 col-sm-12 col-md-6 col-lg-6">
 				<div class="bd-prt-1">
-				<span class="bd-label">About</span>
 				<h2 class="bd-h2">Our Mission</h2>
-				<p class="text-center bd-descr">‎Our mission is to design and develop modern, responsive, and user-friendly websites that help businesses and individuals establish a strong online presence. We are committed to delivering high-quality digital solutions that combine creativity, functionality, and performance while ensuring an exceptional user experience.</p>
+				<p class="bd-descr">‎Our mission is to design and develop modern, responsive, and user-friendly websites that help businesses and individuals establish a strong online presence. We are committed to delivering high-quality digital solutions that combine creativity, functionality, and performance while ensuring an exceptional user experience.</p>
 				</div>
-				<img alt="mission-picture" src="images/file_00000000869071f486c0944fc4423c54.png" />
+				<img alt="mission-picture" src="images/file_00000000869071f486c0944fc4423c54.png" class="img-responsive bd-abt-img"/>
 				</div>
 				
 				<div class="bd-abt col-xs-12 col-sm-12 col-md-6 col-lg-6">
 				<div class="bd-prt-1">
-				<span class="bd-label">About</span>
 				<h2 class="bd-h2">Who We Are</h2>
-				<p class="text-center bd-descr">‎‎NovaPixel Studio is a creative web design and frontend development studio dedicated to building modern, responsive, and user-friendly websites. We work with businesses, startups, and individuals to create digital experiences that are visually appealing, easy to use, and tailored to their unique goals.</p>
+				<p class="bd-descr">‎‎NovaPixel Studio is a creative web design and frontend development studio dedicated to building modern, responsive, and user-friendly websites. We work with businesses, startups, and individuals to create digital experiences that are visually appealing, easy to use, and tailored to their unique goals.</p>
 				</div>
-				<img alt="who we are picture" src="images/magnific_modern-tech-company-websi_dI0GsEsXSL.png" />
+				<img alt="who we are picture" src="images/magnific_modern-tech-company-websi_dI0GsEsXSL.png" class="img-responsive bd-abt-img"/>
 				</div>
 				
+						<div class="bd-abt col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<div class="bd-prt-1">
+				<h2 class="bd-h2">Skills & Development</h2>
+				<p class="bd-descr">‎At NovaPixel Studio, we use modern web technologies to build fast, responsive, and visually appealing websites. Our expertise includes creating intuitive user interfaces, optimizing website performance, and ensuring compatibility across all devices.</p>
+				</div>
+				<img alt="skills & development picture" src="images/file_00000000e65c71f4afe9cfbf59fd6438.png" class="img-responsive bd-abt-img"/>
+				</div>
+								
+						<div class="bd-abt col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<div class="bd-prt-1">
+				<h2 class="bd-h2">Why Choose Us</h2>
+				<p class="bd-descr">‎‎At NovaPixel Studio, we believe every website should be more than just visually appealing—it should deliver results. We combine creativity, modern technology, and attention to detail to create websites that are responsive, fast, and easy to use. From the initial concept to the final launch, we work closely with our clients to ensure every project reflects their brand and helps them achieve their goals.</p>
+				</div>
+				<img alt="why choose us picture" src="images/file_00000000c44071f48eb95ebe6e444c7a.png" class="img-responsive bd-abt-img" />
+				</div>		
+				</div>
+				
+				<div class="bd-projects row" id="projects">
+				<div class="bd-prjt col-xs-12 col-md-12 col-sm-12 col-lg-6">
+				<div class="bd-part-1">
+				<img alt="Business website image" src="images/file_00000000e86471f48d99b38af08a7e0e.png" class="bd-p-img img-responsive" />
+				<span class="bd-web-name">Business Website</span>
+				<p class="bd-p-descr">A modern and responsive business website designed to showcase services, build trust, and help businesses connect with potential clients.</p>
+				</div>
+				<div class="bd-skls-cont">
+				<span class="bd-skls-label">Technology Used:</span>
+				<ul class="bd-skls">
+				<li class="bd-skl">HTML5</li>
+				<li class="bd-skl">CSS3</li>
+				<li class="bd-skl">Bootstrap 3</li>
+				<li class="bd-skl">Responsive Design</li>
+				<li class="bd-skl">Bootstrap Grid</li>
+				<li class="bd-skl">UI Design</li>
+				<li class="bd-skl">Basic SEO</li>
+				</ul>
+				</div>
+				<a href="#" class="bd-visit">Visit Site</a>
+				</div>
+				
+				<div class="bd-prjt col-xs-12 col-md-12 col-sm-12 col-lg-6">
+				<div class="bd-part-1">
+				<img alt="Portfolio website image" src="images/file_00000000d0e871f4aef4976835c65fbd.png" class="bd-p-img img-responsive" />
+				<span class="bd-web-name">Portfolio Website</span>
+				<p class="bd-p-descr">A modern, responsive portfolio website designed to showcase my skills, projects, and services. It features a clean user interface, smooth navigation, and optimized performance to create a professional online presence.</p>
+				</div>
+				<div class="bd-skls-cont">
+				<span class="bd-skls-label">Technology Used:</span>
+				<ul class="bd-skls">
+				<li class="bd-skl">HTML5</li>
+				<li class="bd-skl">CSS3</li>
+				<li class="bd-skl">Bootstrap 3</li>
+				<li class="bd-skl">Responsive Design</li>
+				<li class="bd-skl">JavaScript</li>
+				<li class="bd-skl">UI Design</li>
+				<li class="bd-skl">Basic SEO</li>
+				</ul>
+				</div>
+				<a href="#" class="bd-visit">Visit Site</a>
+				</div>
+				
+								<div class="bd-prjt col-xs-12 col-md-12 col-sm-12 col-lg-6">
+				<div class="bd-part-1">
+				<img alt="Landing page image" src="images/file_00000000d25071f4853309077f91d174.png" class="bd-p-img img-responsive" />
+				<span class="bd-web-name">Landing Website</span>
+				<p class="bd-p-descr">A clean, responsive landing page designed to promote products and services.</p>
+				</div>
+				<div class="bd-skls-cont">
+				<span class="bd-skls-label">Technology Used:</span>
+				<ul class="bd-skls">
+				<li class="bd-skl">HTML5</li>
+				<li class="bd-skl">CSS3</li>
+				<li class="bd-skl">Bootstrap 3</li>
+				<li class="bd-skl">Responsive Design</li>
+				<li class="bd-skl">JavaScript</li>
+				<li class="bd-skl">UI Design</li>
+				<li class="bd-skl">Basic SEO</li>
+				<li class="bd-skl">Flexbox</li>
+				</ul>
+				</div>
+				<a href="#" class="bd-visit">Visit Site</a>
+				</div>
 				</div>
 				
 				</div>

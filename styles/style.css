@@ -30,6 +30,7 @@
 
 .m-list{
     display: none;
+    list-style-type: none;
 }
 
 .menu-btn{
