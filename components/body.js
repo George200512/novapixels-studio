@@ -2,13 +2,15 @@ const VBody = {
 				template: `
 				
 				<header>
-				<nav class="navbar navbar-default  b-header">
+				<nav class="navbar navbar-default  bd-header">
 				<div class="container-fluid">
 				<div class="navbar-header">
+				<div class="navbar-brand bd-nav-header">
 				<a class="home-link" href="index.html">
 				<img alt="Site logo" src="images/file_0000000054587243bb9b36557ae2e59d.png" class="logo" />
 				</a>
 				<button class="btn"><span class="bi bi-list"></span></button>
+				</div>
 				</div>
 				<ul class="nav navbar-nav menu">
 				<li class="active b-active m-item"><a href="#home">Home</a></li>
@@ -22,7 +24,8 @@ const VBody = {
 				
 				<main>
 				<section class="section-1">
-				<div class="container-fluid">
+				<div classs="bd-msg-box" ref="msgBox"></div>
+				<div class="container-fluid bd-main">
 				<div class="bd-hero" id="home">
 				<h1 class="text-center"><span class="np">NovelPixel</span> <span class="st">Studio</span></h1>
 				<span class="shrt-tg text-center">Build Your Online Presence With Us.</span>
@@ -133,9 +136,65 @@ const VBody = {
 				</div>
 				</div>
 				
+				<div class="row bd-contact col-xs-12 col-md-6 col-sm-12 col-lg-6" id="contact">
+				<div class="bd-slinks">
+				<h2 class="bd-h2">For more enquiries:</h2>
+				<ul class="bd-links">
+				<li class="bd-link"><a href="https://george-ofori.vercel.app" target="_blank" aria-label="Website"><span class="bi bi-globe"></span> NovaPixels Studio</a></li>
+				
+				<li class="bd-link"><a href="https://george-ofori.vercel.app" target="_blank" aria-label="Facebook"><span class="bi bi-facebook"></span> NovaPixels Studio</a></li>
+				
+				<li class="bd-link"><a href="https://george-ofori.vercel.app" target="_blank" aria-label="Instagram"><span class="bi bi-instagram"></span> NovaPixels Studio</a></li>
+				
+				<li class="bd-link"><a href="https://george-ofori.vercel.app" target="_blank" aria-label="X"><span class="bi bi-twitter"></span> NovaPixels Studio</a></li>
+				</ul>
+				</div>
+				
+				<div class="bd-form">
+				<h2 class="bd-h2">Contact Form</h2>
+				<form>
+				<div class="form-group">
+				<label for="username" class="bd-form">Username</label>
+				<input class="form-control bd-input" id="username" v-model="username" />
+				</div>
+				
+				<div class="form-group">
+				<label for="phone" class="bd-form">Phone</label>
+				<input class="form-control bd-input" id="phone" v-model="phone" />
+				</div>
+				
+				<div class="form-group">
+				<label for="message" class="bd-form">Message</label>
+				<textarea class="form-control bd-textarea" id="message" v-model="message" col="18" row="7"></textarea>
+				</div>
+				
+				<div class="form-group">
+				<button class="btn bd-submit" @on:click="sendMessage">Send Message</button> 
+				</div>
+				</form>
+				</div>
+				
+				</div>
+				
 				</div>
 				</section>
 				</main>
+				
+			 <footer>
+				<div class="wells-md">
+			<div class="bd-tech-label">	Technologies Used</div>
+					<ul class="bd-skls">
+				<li class="bd-skl">HTML5</li>
+				<li class="bd-skl">CSS3</li>
+				<li class="bd-skl">Bootstrap 3</li>
+				<li class="bd-skl">Responsive Design</li>
+				<li class="bd-skl">JavaScript</li>
+				<li class="bd-skl">UI Design</li>
+				<li class="bd-skl">Basic SEO</li>
+				</ul>
+				</div>
+				<a class="bd-bt" id="#home"><span class=" bi bi-chevron-up"></span></a>
+				</footer>
 				`
 } 
 export {VBody}
