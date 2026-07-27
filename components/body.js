@@ -7,12 +7,12 @@ const VBody = {
 				<div class="navbar-header">
 				<div class="navbar-brand bd-nav-header">
 				<a class="home-link" href="index.html">
-				<img alt="Site logo" src="images/file_0000000054587243bb9b36557ae2e59d.png" class="logo" />
+				<img alt="Site logo" src="images/file_0000000054587243bb9b36557ae2e59d.png" class="bd-logo" />
 				</a>
-				<button class="btn"><span class="bi bi-list"></span></button>
+				<button class="btn bd-menu-btn" @click="toggleMenu"><span class="bi bi-list"></span></button>
 				</div>
 				</div>
-				<ul class="nav navbar-nav menu">
+				<ul class="nav navbar-nav bd-menu">
 				<li class="active b-active m-item"><a href="#home">Home</a></li>
 				<li class="m-item"><a href="#about">About</a></li>
 				<li class="m-item"><a href="#projects">Projects</a></li>
@@ -193,7 +193,8 @@ const VBody = {
 				<li class="bd-skl">Basic SEO</li>
 				</ul>
 				</div>
-				<a class="bd-bt" id="#home"><span class=" bi bi-chevron-up"></span></a>
+				<a class="bd-bt" href="https://wa.me/233504694485?text=I%20would%20like%20a%20website%20like%20this
+	."><span class=" bi bi-whatsapp"></span></a>
 				</footer>
 				`
 } 

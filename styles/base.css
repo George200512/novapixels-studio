@@ -56,3 +56,10 @@ h1,h2,h3,h4,h5,h6{
 .b-header{
     background: black;
 }
+
+.btn:focus, .btn.focus, .btn:active:focus, .btn.active:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+
