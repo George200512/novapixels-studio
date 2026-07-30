@@ -222,27 +222,113 @@ main{
 }
 
 .bd-menu{
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 0.8rem;
     align-items: center;
     justify-content: center;
+    transition: transform var(--transition-dalay) linear;
+    color: white;
+    transform: translateX(100%);
 }
 
-.m-item a:link, .m-item:visited{
+.n-link:link, .n-link:visited{
     background: rgba(225,255,255,0.3);
     border-radius: var(--border-radius);
     border: 0.02rem solid var(--border);
     color: white;
+    transition: background var(--transition-duration) linear, color var(--transition-duration) linear;
 }
 
+.n-link:active, .n-link:hover{
+    background: var(--bg);
+    color: var(--accent);
+}
 
-.b-active a:active{
+.b-active .n-link:active{
     border: 0.02rem solid var(--border);
     background: var(--bg);
     color: white;
-    
 }
+
+main{
+    margin-top: 4rem;
+}
+
+.section-1{
+    background: url("../images/file_0000000028c071f4a9e771e5514b0d43.png");
+    width: 100vw;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.bd-hero{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+    padding-top: 1.5rem;
+}
+
+h1{
+    font-weight: clamp(3rem, 2.5vw, 5vw);
+}
+
+.np{
+    background: linear-gradient(96deg,var(--primary), var(--accent));
+    background-clip: text;
+    --webkit-background-clip: text;
+    --webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.shrt-tg{
+    color: var(--accent);
+    border-radius: var(--border-radius);
+    border: 0.04rem solid var(--accent);
+    padding: 0.5rem;
+}
+
+.cta-btn{
+    margin-bottom: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.cta-btn:nth-child(1):link, .cta-btn:nth-child(1):visited{
+    color: white;
+    background: var(--accent);
+    border-radius: var(--border-radius);
+    padding: 0.6rem;
+}
+
+.cta-btn:nth-child(1):hover, .cta-btn:nth-child(1):active{
+    color: var(--accent);
+    background: transparent;
+    border-radius: var(--border-radius);
+    border: 0.04rem solid var(--accent);
+    text-decoration: none;
+}
+
+.cta-btn:nth-child(2):link, .cta-btn:nth-child(2):visited{
+    color: var(--accent);
+    background: transparent;
+    border-radius: var(--border-radius);
+    padding: 0.6rem;
+    border: 0.04rem solid var(--accent);
+}
+
+
+.cta-btn:nth-child(2):hover, .cta-btn:nth-child(2):active{
+    color: white;
+    background: var(--accent);
+    border-radius: var(--border-radius);
+    border: 0.04rem solid var(--accent);
+    text-decoration: none;
+}
+
 @media screen and (min-width: 992px){
     .menu-btn{
         display: none;

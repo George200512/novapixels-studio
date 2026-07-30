@@ -13,10 +13,10 @@ const VBody = {
 				</div>
 				</div>
 				<ul class="nav navbar-nav bd-menu">
-				<li class="active b-active m-item"><a href="#home">Home</a></li>
-				<li class="m-item"><a href="#about">About</a></li>
-				<li class="m-item"><a href="#projects">Projects</a></li>
-				<li class="m-item"><a href="#contact">contact</a></li>
+				<li class="active b-active m-item"><a href="#home" @click="closeNav" class="n-link">Home</a></li>
+				<li class="m-item"><a href="#about" @click="closeNav" class="n-link">About</a></li>
+				<li class="m-item"><a href="#projects" @click="closeNav" class="n-link">Projects</a></li>
+				<li class="m-item"><a href="#contact" @click="closeNav" class="n-link">contact</a></li>
 				</ul>
 				</div>
 				</nav>
@@ -154,22 +154,22 @@ const VBody = {
 				<h2 class="bd-h2">Contact Form</h2>
 				<form>
 				<div class="form-group">
-				<label for="username" class="bd-form">Username</label>
+				<label for="username" class="bd-form text-muted"> <span class="bi bi-person"></span>Username</label>
 				<input class="form-control bd-input" id="username" v-model="username" />
 				</div>
 				
 				<div class="form-group">
-				<label for="phone" class="bd-form">Phone</label>
-				<input class="form-control bd-input" id="phone" v-model="phone" />
+				<label for="phone" class="bd-form text-muted"><span class="bi bi-phone"></span> Phone</label>
+				<input class="form-control bd-input" id="phone" v-model="phone" type="tel" />
 				</div>
 				
 				<div class="form-group">
-				<label for="message" class="bd-form">Message</label>
+				<label for="message" class="bd-form text-muted"><span class="bi bi-chat"></span> Message</label>
 				<textarea class="form-control bd-textarea" id="message" v-model="message" col="18" row="7"></textarea>
 				</div>
 				
 				<div class="form-group">
-				<button class="btn bd-submit" @on:click="sendMessage">Send Message</button> 
+				<button class="btn bd-submit" type="submit" @click="sendMessage">Send Message</button> 
 				</div>
 				</form>
 				</div>
@@ -181,7 +181,7 @@ const VBody = {
 				</main>
 				
 			 <footer>
-				<div class="wells-md">
+				<div class="bd-tech-div">
 			<div class="bd-tech-label">	Technologies Used</div>
 					<ul class="bd-skls">
 				<li class="bd-skl">HTML5</li>
