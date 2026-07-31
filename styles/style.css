@@ -201,7 +201,7 @@ main{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: 100%;
 }
 
 .bd-logo{
@@ -230,6 +230,7 @@ main{
     transition: transform var(--transition-dalay) linear;
     color: white;
     transform: translateX(100%);
+    overflow: hidden;
 }
 
 .n-link:link, .n-link:visited{
@@ -257,7 +258,7 @@ main{
 
 .section-1{
     background: url("../images/file_0000000028c071f4a9e771e5514b0d43.png");
-    width: 100vw;
+    width: 100%;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -273,7 +274,8 @@ main{
 }
 
 h1{
-    font-weight: clamp(3rem, 2.5vw, 5vw);
+    font-size: clamp(3rem, 2.5vw, 5vw);
+    font-weight: 700;
 }
 
 .np{
@@ -329,6 +331,57 @@ h1{
     text-decoration: none;
 }
 
+.bd-abt{
+    background: var(--bg);
+    margin: 2rem 1rem;
+    border: 0.02rem solid var(--border);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    overflow-wrap: break-word;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap);
+}
+
+.bd-prt-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap);
+    
+}
+
+.bd-abt::before{
+    display: block;
+    position: absolute;
+    content: "About";
+    color: var(--accent);
+    top: 0.7rem;
+    left: 0.6rem;
+}
+
+.bd-abt:hover{
+    border: 0.02rem solid var(--accent);
+}
+
+.bd-abt-img{
+    border-radius: var(--border-radius);
+}
+
+.bd-h2{
+    border-bottom: 0.15rem solid var(--primary);
+    padding-bottom: 0.5rem;
+}
+
+.bd-projects{
+    background: var(--primary);
+    margin: 1rem 1rem;
+    width: 100%;
+}
 @media screen and (min-width: 992px){
     .menu-btn{
         display: none;
