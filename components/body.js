@@ -25,7 +25,7 @@ const VBody = {
 				<main>
 				<section class="section-1">
 				<div classs="bd-msg-box" ref="msgBox"></div>
-				<div class="container-fluid bd-main">
+				<div class="container bd-main">
 				<div class="bd-hero" id="home">
 				<h1 class="text-center"><span class="np">NovelPixel</span> <span class="st">Studio</span></h1>
 				<span class="shrt-tg text-center">Build Your Online Presence With Us.</span>
@@ -37,7 +37,7 @@ const VBody = {
 				</div>
 				
 				<div class="bd-about row" id="about">
-				<div class="bd-abt col-xs-12 col-sm-12 col-md-6 col-lg-6 center-block">
+				<div class="bd-abt col-xs-12 col-sm-12 col-md-6 col-lg-6">
 				<div class="bd-prt-1">
 				<h2 class="bd-h2">Our Mission</h2>
 				<p class="bd-descr">‎Our mission is to design and develop modern, responsive, and user-friendly websites that help businesses and individuals establish a strong online presence. We are committed to delivering high-quality digital solutions that combine creativity, functionality, and performance while ensuring an exceptional user experience.</p>
@@ -45,7 +45,7 @@ const VBody = {
 				<img alt="mission-picture" src="images/file_00000000869071f486c0944fc4423c54.png" class="img-responsive bd-abt-img"/>
 				</div>
 				
-				<div class="bd-abt col-xs-12 col-sm-12 col-md-6 col-lg-6 center-block">
+				<div class="bd-abt col-xs-12 col-sm-12 col-md-6 col-lg-6">
 				<div class="bd-prt-1">
 				<h2 class="bd-h2">Who We Are</h2>
 				<p class="bd-descr">‎‎NovaPixel Studio is a creative web design and frontend development studio dedicated to building modern, responsive, and user-friendly websites. We work with businesses, startups, and individuals to create digital experiences that are visually appealing, easy to use, and tailored to their unique goals.</p>
@@ -53,7 +53,7 @@ const VBody = {
 				<img alt="who we are picture" src="images/magnific_modern-tech-company-websi_dI0GsEsXSL.png" class="img-responsive bd-abt-img"/>
 				</div>
 				
-						<div class="bd-abt col-xs-12 col-sm-12 col-md-6 col-lg-6 center-block">
+						<div class="bd-abt col-xs-12 col-sm-12 col-md-6 col-lg-6">
 				<div class="bd-prt-1">
 				<h2 class="bd-h2">Skills & Development</h2>
 				<p class="bd-descr">‎At NovaPixel Studio, we use modern web technologies to build fast, responsive, and visually appealing websites. Our expertise includes creating intuitive user interfaces, optimizing website performance, and ensuring compatibility across all devices.</p>
@@ -61,7 +61,7 @@ const VBody = {
 				<img alt="skills & development picture" src="images/file_00000000e65c71f4afe9cfbf59fd6438.png" class="img-responsive bd-abt-img"/>
 				</div>
 								
-						<div class="bd-abt col-xs-12 col-sm-12 col-md-6 col-lg-6 center-block">
+						<div class="bd-abt col-xs-12 col-sm-12 col-md-6 col-lg-6">
 				<div class="bd-prt-1">
 				<h2 class="bd-h2">Why Choose Us</h2>
 				<p class="bd-descr">‎‎At NovaPixel Studio, we believe every website should be more than just visually appealing—it should deliver results. We combine creativity, modern technology, and attention to detail to create websites that are responsive, fast, and easy to use. From the initial concept to the final launch, we work closely with our clients to ensure every project reflects their brand and helps them achieve their goals.</p>
@@ -136,8 +136,8 @@ const VBody = {
 				</div>
 				</div>
 				
-				<div class="row bd-contact col-xs-12 col-md-6 col-sm-12 col-lg-6" id="contact">
-				<div class="bd-slinks">
+				<div class="row bd-contact" id="contact">
+				<div class="bd-slinks col-xs-12 col-md-6 col-sm-12 col-lg-6">
 				<h2 class="bd-h2">For more enquiries:</h2>
 				<ul class="bd-links">
 				<li class="bd-link"><a href="https://george-ofori.vercel.app" target="_blank" aria-label="Website"><span class="bi bi-globe"></span> NovaPixels Studio</a></li>
@@ -150,7 +150,7 @@ const VBody = {
 				</ul>
 				</div>
 				
-				<div class="bd-form">
+				<div class="bd-form col-xs-12 col-md-6 col-sm-12 col-lg-6">
 				<h2 class="bd-h2">Contact Form</h2>
 				<form>
 				<div class="form-group">
@@ -165,7 +165,7 @@ const VBody = {
 				
 				<div class="form-group">
 				<label for="message" class="bd-form text-muted"><span class="bi bi-chat"></span> Message</label>
-				<textarea class="form-control bd-textarea" id="message" v-model="message" col="18" row="7"></textarea>
+				<textarea class="form-control bd-textarea" id="message" v-model="message" cols="18" rows="7"></textarea>
 				</div>
 				
 				<div class="form-group">
