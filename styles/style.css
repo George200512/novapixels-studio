@@ -396,6 +396,8 @@ h1{
     display: flex;
     flex-direction: column;
     column-gap: var(--gap);
+    border-bottom: 0.2rem solid var(--border);
+    padding-bottom: 0.5rem;
 }
 
 .bd-prjt::before{
@@ -459,9 +461,79 @@ h1{
     border-radius: var(--border-radius);
 }
 
+.bd-visit:hover, .bd-visit:active{
+    outline: none;
+}
+
 .bd-contact{
     margin: 2rem 1rem;
     background: black;
+}
+
+.bd-slinks{
+    border: 0.1rem solid var(--border);
+    border-radius: var(--border-radius);
+    padding: 1.2rem;
+}
+
+.bd-slinks .bd-h2{
+    color: var(--accent);
+    text-align: center;
+}
+
+.bd-links{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    padding: 1rem;
+    justify-content: center;
+}
+
+.bd-link:link, .bd-link:visited{
+    color: var(--secondary);
+    padding: 0.7rem;
+    text-decoration: none;
+}
+
+.bd-link:hover, .bd-link:active{
+    background: var(--bg);
+    border: 0.1rem solid var(--border);
+    border-radius: var(--border-radius);
+    outline: none;
+    color: var(--accent);
+}
+
+.bd-form{
+    background: var(--bg);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: var(--border-radius);
+}
+
+.bd-label{
+    color: rgba(255,255,255,0.4);
+    padding-bottom: 0.5rem;
+}
+
+.bd-input, .bd-textarea, .bd-input{
+    background: black;
+    border: 0.05rem solid var(--border);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size);
+    padding: 0.8rem;
+    color: var(--secondary);
+    font-family: var(--base-font);
+}
+
+.bd-submit{
+    background: var(--accent);
+    color: var(--secondary);
+    padding: 0.6rem;
+}
+
+.bd-submit:active{
+    opacity: 0.7;
 }
 @media screen and (min-width: 992px){
     .menu-btn{

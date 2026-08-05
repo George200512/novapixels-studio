@@ -140,13 +140,13 @@ const VBody = {
 				<div class="bd-slinks col-xs-12 col-md-6 col-sm-12 col-lg-6">
 				<h2 class="bd-h2">For more enquiries:</h2>
 				<ul class="bd-links">
-				<li class="bd-link"><a href="https://george-ofori.vercel.app" target="_blank" aria-label="Website"><span class="bi bi-globe"></span> NovaPixels Studio</a></li>
+				<li><a href="https://george-ofori.vercel.app" target="_blank" aria-label="Website"  class="bd-link"><span class="bi bi-globe"></span> NovaPixels Studio</a></li>
 				
-				<li class="bd-link"><a href="https://george-ofori.vercel.app" target="_blank" aria-label="Facebook"><span class="bi bi-facebook"></span> NovaPixels Studio</a></li>
+				<li><a href="https://george-ofori.vercel.app" target="_blank" aria-label="Facebook"  class="bd-link"><span class="bi bi-facebook"></span> NovaPixels Studio</a></li>
 				
-				<li class="bd-link"><a href="https://george-ofori.vercel.app" target="_blank" aria-label="Instagram"><span class="bi bi-instagram"></span> NovaPixels Studio</a></li>
+				<li><a href="https://george-ofori.vercel.app" target="_blank" aria-label="Instagram"  class="bd-link"><span class="bi bi-instagram"></span> NovaPixels Studio</a></li>
 				
-				<li class="bd-link"><a href="https://george-ofori.vercel.app" target="_blank" aria-label="X"><span class="bi bi-twitter"></span> NovaPixels Studio</a></li>
+				<li><a href="https://george-ofori.vercel.app" target="_blank" aria-label="X"  class="bd-link"><span class="bi bi-twitter"></span> NovaPixels Studio</a></li>
 				</ul>
 				</div>
 				
@@ -154,18 +154,18 @@ const VBody = {
 				<h2 class="bd-h2">Contact Form</h2>
 				<form>
 				<div class="form-group">
-				<label for="username" class="bd-form text-muted"> <span class="bi bi-person"></span>Username</label>
-				<input class="form-control bd-input" id="username" v-model="username" />
+				<label for="username" class="bd-label text-muted"> <span class="bi bi-person"></span>Username</label>
+				<input class="form-control bd-input" id="username" v-model="username" placeholder="Username"/>
 				</div>
 				
 				<div class="form-group">
-				<label for="phone" class="bd-form text-muted"><span class="bi bi-phone"></span> Phone</label>
-				<input class="form-control bd-input" id="phone" v-model="phone" type="tel" />
+				<label for="phone" class="bd-label text-muted"><span class="bi bi-phone"></span> Phone</label>
+				<input class="form-control bd-input" id="phone" v-model="phone" type="tel" placeholder="Phone" />
 				</div>
 				
 				<div class="form-group">
-				<label for="message" class="bd-form text-muted"><span class="bi bi-chat"></span> Message</label>
-				<textarea class="form-control bd-textarea" id="message" v-model="message" cols="18" rows="7"></textarea>
+				<label for="message" class="bd-label text-muted"><span class="bi bi-chat"></span> Message</label>
+				<textarea class="form-control bd-textarea" id="message" v-model="message" cols="18" rows="7" placeholder="Message"></textarea>
 				</div>
 				
 				<div class="form-group">
