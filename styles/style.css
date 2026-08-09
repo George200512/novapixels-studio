@@ -533,7 +533,33 @@ h1{
 }
 
 .bd-submit:active{
-    opacity: 0.7;
+    opacity: 0.5;
+    color: white;
+}
+
+footer{
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1rem;
+}
+
+.bd-bt{
+    position: fixed;
+    font-size: 1.8rem;
+    bottom: 20%;
+    left: 70%;
+    color: white;
+    padding: 1rem;
+    background:  linear-gradient(96deg,var(--primary), var(--accent));
+    border-radius: 50%;
+    box-shadow: 0.6rem 0.6rem 0.8rem rgba(255,255,255,0.2);
+}
+
+.bd-bt:hover, .bd-bt:active, .bd-bt:focus{
+    outline: none;
+    color: white;
+    border: 0.3rem solid var(--secondary);
 }
 @media screen and (min-width: 992px){
     .menu-btn{
@@ -548,6 +574,28 @@ h1{
         align-items: center;
         justify-content: space-between;
         margin: 0.6rem 1rem;
+    }
+    
+    .bd-menu-btn{
+        display: none;
+    }
+    
+    .bd-nav-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .bd-menu{
+        display: flex;
+        flex-direction: row;
+        gap: var(--gap);
+        transform: translate(0,0);
+    }
+    
+    .m-item{
+        color: var(--secondary);
     }
 }
 

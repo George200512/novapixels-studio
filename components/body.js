@@ -3,7 +3,7 @@ const VBody = {
 				
 				<header>
 				<nav class="navbar navbar-default  bd-header">
-				<div class="container-fluid">
+				<div class="container-fluid bd-nav-container">
 				<div class="navbar-header">
 				<div class="navbar-brand bd-nav-header">
 				<a class="home-link" href="index.html">
@@ -194,7 +194,7 @@ const VBody = {
 				</ul>
 				</div>
 				<a class="bd-bt" href="https://wa.me/233504694485?text=I%20would%20like%20a%20website%20like%20this
-	."><span class=" bi bi-whatsapp"></span></a>
+	."><span class="bi bi-whatsapp"></span></a>
 				</footer>
 				`
 } 
