@@ -42,7 +42,6 @@ body{
     line-height: var(--line-height);
     background: black;
     color: white;
-    position: relative;
 }
 
 

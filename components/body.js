@@ -24,13 +24,13 @@ const VBody = {
 				
 				<main>
 				<section class="section-1">
-				<div classs="bd-msg-box" ref="msgBox"></div>
-				<div class="container bd-main">
+				<div class="bd-msg-box" ref="msgBox"></div>
+				<div class="container-fluid bd-main">
 				<div class="bd-hero" id="home">
 				<h1 class="text-center"><span class="np">NovelPixel</span> <span class="st">Studio</span></h1>
 				<span class="shrt-tg text-center">Build Your Online Presence With Us.</span>
 				<p class="text-center">Transforming ideas into beautiful, high-performance websites using modern web technologies.</p>
-				<div class="cta-buttons row">
+				<div class="cta-buttons row center-block">
 				<a class="cta-btn col-xs-12 col-sm-12 col-md-6 col-lg-6" href="#contact">Hire Us</a>
 				<a class="cta-btn col-xs-12 col-sm-12 col-md-6 col-lg-6" href="#projects">View Project</a>
 				</div>

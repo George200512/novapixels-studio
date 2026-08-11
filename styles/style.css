@@ -216,7 +216,7 @@ main{
     color: white;
 }
 
-.bd-menu-btn:active, .bd-menu-btn:hover{
+.bd-menu-btn:active, .bd-menu-btn:hover, .bd-menu-btn:focus{
     border: 0.01rem solid var(--border);
     color: white;
 }
@@ -234,16 +234,16 @@ main{
 }
 
 .n-link:link, .n-link:visited{
-    background: rgba(225,255,255,0.3);
     border-radius: var(--border-radius);
     border: 0.02rem solid var(--border);
     color: white;
     transition: background var(--transition-duration) linear, color var(--transition-duration) linear;
 }
 
-.n-link:active, .n-link:hover{
+.n-link:active, .n-link:hover, .n-link:focus{
     background: var(--bg);
     color: var(--accent);
+    border: none;
 }
 
 .b-active .n-link:active{
@@ -412,11 +412,12 @@ h1{
 
 .bd-p-img{
   border-radius: var(--border-radius);
-    transition: transform var(--transition-duration) linear;    
+    transition: transform var(--transition-duration) linear; 
+max-width: 80%;
 }
 
 .bd-p-img:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .bd-web-name{
@@ -594,8 +595,28 @@ footer{
         transform: translate(0,0);
     }
     
-    .m-item{
+    .n-link{
         color: var(--secondary);
     }
+    
+    .n-link:active, .n-link:hover, .n-link:focus{
+        color: var(--accent);
+    }
+    
+    .cta-btn:nth-child(2):link, .cta-btn:nth-child(2):visited{
+    color: var(--accent);
+    background: transparent;
+    border-radius: var(--border-radius);
+    padding: 0.6rem;
+    border: 0.04rem solid var(--accent);
+        white-space: nowrap;
+        margin-left: 0.6rem;
+}
+    
+    .bd-slinks{
+        padding: 0;
+        margin-left: 0.6rem;
+    }
+    
 }
 
