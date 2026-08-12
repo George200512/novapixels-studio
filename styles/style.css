@@ -151,12 +151,13 @@
     margin-top: 0.6rem;
 }
 
-header{
+header, .bd-header{
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     z-index: 999;
+    margin: 0;
 }
 
 main{
@@ -189,11 +190,9 @@ main{
 }
 
 .bd-header{
-    background: rgba(0,0,0,0.2);
+    padding: 0.8rem 0.5rem;
+    background: transparent;
     border: none;
-    --webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    padding: 1rem 0.5rem;
 }
 
 .bd-nav-header{
@@ -201,12 +200,22 @@ main{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    background: rgba(0,0,0,0.2);
+    border: none;
+    --webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0.8rem;
 }
 
 .bd-logo{
     width: 7rem;
-    height: auto;
+    height: 3rem;
+    object-fit: contain;
+}
+
+.navbar-brand{
+    padding: 0;
+    margin: 0;
 }
 
 .bd-menu-btn{
@@ -214,6 +223,7 @@ main{
     background: var(--bg);
     margin-left: 0.6rem;
     color: white;
+    align-self: center;
 }
 
 .bd-menu-btn:active, .bd-menu-btn:hover, .bd-menu-btn:focus{
@@ -412,8 +422,7 @@ h1{
 
 .bd-p-img{
   border-radius: var(--border-radius);
-    transition: transform var(--transition-duration) linear; 
-max-width: 80%;
+    transition: transform var(--transition-duration) linear;
 }
 
 .bd-p-img:hover{
@@ -609,13 +618,17 @@ footer{
     border-radius: var(--border-radius);
     padding: 0.6rem;
     border: 0.04rem solid var(--accent);
-        white-space: nowrap;
-        margin-left: 0.6rem;
+        transform: translate(0.8rem, 0);
 }
     
     .bd-slinks{
         padding: 0;
-        margin-left: 0.6rem;
+        transform: translate(-0.8rem, 0);
+    }
+    
+    .cta-buttons{
+        width: 100%;
+        max-width: 500px;
     }
     
 }

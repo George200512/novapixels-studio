@@ -1,16 +1,21 @@
 const VBody = {
+				data(){
+								return {
+												open: false,
+								}
+				},
 				template: `
 				
 				<header>
 				<nav class="navbar navbar-default  bd-header">
 				<div class="container-fluid bd-nav-container">
-				<div class="navbar-header">
-				<div class="navbar-brand bd-nav-header">
+				<div class="navbar-header bd-nav-header">
+				<div class="navbar-brand">
 				<a class="home-link" href="index.html">
 				<img alt="Site logo" src="images/file_0000000054587243bb9b36557ae2e59d.png" class="bd-logo" />
 				</a>
-				<button class="btn bd-menu-btn" @click="toggleMenu"><span class="bi bi-list"></span></button>
 				</div>
+				<button class="btn bd-menu-btn" @click="toggleMenu"><span class="bi bi-list"></span></button>
 				</div>
 				<ul class="nav navbar-nav bd-menu">
 				<li class="active b-active m-item"><a href="#home" @click="closeNav" class="n-link">Home</a></li>
@@ -31,8 +36,8 @@ const VBody = {
 				<span class="shrt-tg text-center">Build Your Online Presence With Us.</span>
 				<p class="text-center">Transforming ideas into beautiful, high-performance websites using modern web technologies.</p>
 				<div class="cta-buttons row center-block">
-				<a class="cta-btn col-xs-12 col-sm-12 col-md-6 col-lg-6" href="#contact">Hire Us</a>
-				<a class="cta-btn col-xs-12 col-sm-12 col-md-6 col-lg-6" href="#projects">View Project</a>
+				<a class="cta-btn col-xs-12 col-sm-12 col-md-6 col-lg-6 center-block" href="#contact">Hire Us</a>
+				<a class="cta-btn col-xs-12 col-sm-12 col-md-6 col-lg-6 center-block" href="#projects">View Project</a>
 				</div>
 				</div>
 				
@@ -196,6 +201,23 @@ const VBody = {
 				<a class="bd-bt" href="https://wa.me/233504694485?text=I%20would%20like%20a%20website%20like%20this
 	."><span class="bi bi-whatsapp"></span></a>
 				</footer>
-				`
+				`,
+				methods: {
+								toggleMenu(event){
+												if (!this.open){
+																$(".bd-menu").css({
+																				display: "flex",
+																				transform: "translate(0,0)"
+																});
+												}else{
+																$(".bd-menu").css({
+																				display: "flex",
+																				transform: "translate(100%,0)"
+																});
+												}
+																this.open = !this.open;
+								},
+								
+				}
 } 
 export {VBody}
