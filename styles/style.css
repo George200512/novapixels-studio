@@ -151,13 +151,14 @@
     margin-top: 0.6rem;
 }
 
-header, .bd-header{
+header{
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     z-index: 999;
     margin: 0;
+    width: 100vw;
 }
 
 main{
@@ -172,7 +173,7 @@ main{
     left: 70%;
     bottom: 15%;
 }
-
+ 
 
 .sk-pbtn{
     width: 6rem;
@@ -189,8 +190,12 @@ main{
     display: none;
 }
 
+.bd-nav-container{
+    padding: 0;
+}
+
 .bd-header{
-    padding: 0.8rem 0.5rem;
+    padding: 0;
     background: transparent;
     border: none;
 }
@@ -202,9 +207,9 @@ main{
     align-items: center;
     background: rgba(0,0,0,0.2);
     border: none;
-    --webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    padding: 1rem 0.8rem;
+    padding: 1rem 0.3rem;
 }
 
 .bd-logo{
@@ -232,15 +237,18 @@ main{
 }
 
 .bd-menu{
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 0.8rem;
     align-items: center;
     justify-content: center;
-    transition: transform var(--transition-dalay) linear;
+    transition: transform var(--transition-duration) linear;
     color: white;
     transform: translateX(100%);
     overflow: hidden;
+    background: var(--bg);
+    border: 0.02rem solid var(--border);
+    border-radius: var(--border-radius);
 }
 
 .n-link:link, .n-link:visited{
@@ -251,7 +259,6 @@ main{
 }
 
 .n-link:active, .n-link:hover, .n-link:focus{
-    background: var(--bg);
     color: var(--accent);
     border: none;
 }
@@ -590,12 +597,23 @@ footer{
         display: none;
     }
     
-    .bd-nav-container{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+    .bd-nav-header{
+        background: none;
+    -webkit-backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
     }
+    
+    .bd-nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.2);
+    border: none;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0.3rem;
+}
     
     .bd-menu{
         display: flex;

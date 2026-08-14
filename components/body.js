@@ -2,13 +2,16 @@ const VBody = {
 				data(){
 								return {
 												open: false,
+												username: "",
+												phone: "",
+												message: ""
 								}
 				},
 				template: `
 				
 				<header>
 				<nav class="navbar navbar-default  bd-header">
-				<div class="container-fluid bd-nav-container">
+				<div class="container bd-nav-container">
 				<div class="navbar-header bd-nav-header">
 				<div class="navbar-brand">
 				<a class="home-link" href="index.html">
@@ -29,7 +32,6 @@ const VBody = {
 				
 				<main>
 				<section class="section-1">
-				<div class="bd-msg-box" ref="msgBox"></div>
 				<div class="container-fluid bd-main">
 				<div class="bd-hero" id="home">
 				<h1 class="text-center"><span class="np">NovelPixel</span> <span class="st">Studio</span></h1>
@@ -206,16 +208,33 @@ const VBody = {
 								toggleMenu(event){
 												if (!this.open){
 																$(".bd-menu").css({
-																				display: "flex",
 																				transform: "translate(0,0)"
 																});
 												}else{
 																$(".bd-menu").css({
-																				display: "flex",
 																				transform: "translate(100%,0)"
 																});
 												}
 																this.open = !this.open;
+								},
+								
+								closeNav(event){
+												const deviceWidth = window.innerWidth;
+												if (!(deviceWidth > 768)){
+																$(".bd-menu").css({
+																				transform: "translate(100%,0)"
+																});
+																this.open = !this.open;
+												}
+								},
+								
+								sendMessage(event){
+												const myWhatsAppNumber = "233504694485";
+												const text = `Website Request 
+												Message\nName: ${this.username}\nTel: ${this.phone}\nMessage: ${this.message}`;
+												
+												const whatsappUrl = `https://wa.me/${myWhatsAppNumber}?text=${encodeURIComponent(text)}`;
+												window.open(whatsappUrl, "_blank");
 								},
 								
 				}
